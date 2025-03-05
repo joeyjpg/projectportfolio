@@ -1,3 +1,134 @@
-I'm workin' on it, relax!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheddarcheesey's Page</title>
+    <link href='https://fonts.googleapis.com/css?family=JetBrains Mono' rel='stylesheet'>
+    <style>
+        body {
+            width: 100%;
+            height: 100%;
+            background: #000b11;
+            overflow: hidden;
+            font-family: 'JetBrains Mono';
+        }
+        .centered {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Full viewport height */
+            flex-direction: column;
+            gap: 2vh;
+        }
+        .pfp {
+            width: min(30vw, 30vh);
+            height: min(30vw, 30vh);
+            border-radius: 50%;
+            border-width: 7px;
+            border-color: #00293f;
+            border-style: solid;
+        }
+        .maintext {
+            background-color: #00527eaa;
+            color: #d1eed1;
+            padding-left: 1vw;
+            padding-right: 1vw;
+            border-radius: 30px;
+            text-align: center;
+            width: max(30vw, 30vh);
+        }
+        .left {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: min(25vw, 25vh);
+            height: 100%;
+            background-color: #00527e33;
+            text-align: center;
+            color: #ffffff99;
+            overflow-y: scroll;
+            padding-left: 1vw;
+            padding-right: 1vw;
+            border-top-right-radius: 30px;
+            border-bottom-right-radius: 30px;
+        }
+        .right {
+            position: fixed;
+            right: 0;
+            top: 0;
+            width: min(25vw, 25vh);
+            height: 100%;
+            background-color: #00527e33;
+            text-align: center;
+            color: #ffffff99;
+            overflow-y: scroll;
+            padding-left: 1vw;
+            padding-right: 1vw;
+            border-top-left-radius: 30px;
+            border-bottom-left-radius: 30px;
+        }
+        /* Target the scrollbar itself */
+        ::-webkit-scrollbar {
+            width: 0px; /* Adjust width of vertical scrollbar */
+            height: 8px; /* Adjust height of horizontal scrollbar */
+        }
 
-Find the old portfolio at joeyjpg.github.io/legacyportfolio for now.
+        /* Customize the scrollbar track (background) */
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1; /* Light grey track */
+        }
+
+        /* Customize the scrollbar thumb (the part you drag) */
+        ::-webkit-scrollbar-thumb {
+            background: #888; /* Darker thumb */
+            border-radius: 4px; /* Rounded corners */
+        }
+
+        /* Hover effect for the thumb */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555; /* Darker thumb on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="left">
+        <h3><b>More Info</b></h3>
+        <small>(You can scroll here!)</small>
+        <p><b>Phone number</b><br>
+            505–503–4455</p>
+        <p><b>Email address</b><br>
+            thisis@my.email</p>
+        <p><b>Origin</b><br>
+            Netherlands</p>
+        <p><b>Birthday</b><br>
+            03-05</p>
+        <p><b>Skills</b><br></p>
+        <p>Quick learning</p>
+        <p>Being bad at planning</p>
+        <p>Coding</p>
+        <p>Using the MS office suite</p>
+        <p><b>Languages</b></p>
+        <p>English ("fluent")</p>
+        <p>Dutch<br>("Less than fluent")</p>
+        <p><b>Hobbies</b></p>
+        <p>Software development</p>
+        <p>Touching grass</p>
+        <p><a href="https://joeyjpg.github.io/legacyportfolio" style="text-decoration: none; color: #ffcbcb99;">My old webpage can be found here.</a></p>
+    </div>
+    <div class="centered">
+        <img src="pfp.jpg" class="pfp">
+        <div class="maintext">
+            <h2><b>Cheddarcheesey</b></h2>
+            <p>Hi! I'm Cheddarcheesey (also referred to as "Cheddy"), (hopefully) a to-be software dev.</p>
+            <p>I use arch (btw) and have lots of experience with computers and programming, as i've known both since a very young age.</p>
+        </div>
+    </div>
+    <div class="right">
+        <h3><b>Where can you find me?</b></h3>
+        <small>(You can click the text here!)</small>
+        <p><a href="https://discord.com/users/958719107451207700" style="text-decoration: none; color: #ffcbcb99;">On discord</a></p>
+        <p><a href="https://github.com/joeyjpg/" style="text-decoration: none; color: #ffcbcb99;">On github</a></p>
+    </div>
+</body>
+</html>
