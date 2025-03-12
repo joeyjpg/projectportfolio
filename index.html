@@ -11,19 +11,29 @@
             height: 100%;
             overflow: hidden;
             font-family: 'JetBrains Mono';
-        background: conic-gradient(
-            #191622 90deg,
-            #583b69 90deg 180deg,
-            #191622 180deg 270deg,
-            #583b69 270deg
-        );
-        background-repeat: repeat;
-        background-size: 120px 120px;
-        background-position: top left;
-        overflow: hidden;
-        animation: moveBackground 4s linear infinite;
-        text-align: center;
+            background: conic-gradient(
+                #0d6fa3 90deg,
+                #002940 90deg 180deg,
+                #0d6fa3 180deg 270deg,
+                #002940 270deg
+            );
+            background-repeat: repeat;
+            background-size: 120px 120px;
+            background-position: top left;
+            overflow: hidden;
+            animation: moveBackground 4s linear infinite;
+            text-align: center;
         }
+
+        @keyframes moveBackground {
+            0% {
+                background-position: 0 0;
+            }
+            100% {
+                background-position: -240px -120px;
+            }
+        }
+
         .centered {
             display: flex;
             justify-content: center;
